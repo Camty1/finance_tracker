@@ -1,0 +1,3 @@
+#!/bin/bash
+docker build -t pynance .
+docker run -d -p 8001:8001 -v ./data:/data:rw pynance
